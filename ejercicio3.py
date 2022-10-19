@@ -1,6 +1,6 @@
 def imc():
     peso = int(input("Introduce tu peso: "))
-    talla = float(input("Introduce tu altura: "))
+    talla = round(float(input("Introduce tu altura: ")),2)
     IMC = peso / (talla * talla)
     print("Tu imc es de ", IMC)
 
@@ -12,5 +12,6 @@ def imc():
         print("Sobrepeso")
     elif IMC >= 30.00 :
         print("Obesidad")
-    return 
-print(imc())
+    return imc
+
+imc()
