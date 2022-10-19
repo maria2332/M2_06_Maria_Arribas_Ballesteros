@@ -12,5 +12,5 @@ def imc():
         print("Sobrepeso")
     elif IMC >= 30.00 :
         print("Obesidad")
-    return print(imc())
-imc()
+    return 
+print(imc())
